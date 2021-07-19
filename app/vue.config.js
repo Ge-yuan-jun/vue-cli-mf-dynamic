@@ -36,12 +36,12 @@ module.exports = {
     .plugin('mf')
     .use(require('webpack/lib/container/ModuleFederationPlugin'), [{
       name: 'app',
-      filename: remoteEntryName,
-      // 引入的 外部模块
-      remotes: {
-        layout: 'layout@https://s1.hdslb.com/bfs/live-activity/nuwa/dragon_boot_festival_2021/remoteEntry.js',
-        content: 'content@http://localhost:8081/remoteEntry.js'
-      },
+      // filename: remoteEntryName,
+      // // 引入的 外部模块
+      // remotes: {
+      //   layout: 'layout@https://s1.hdslb.com/bfs/live-activity/nuwa/dragon_boot_festival_2021/remoteEntry.js',
+      //   content: 'content@http://localhost:8081/remoteEntry.js'
+      // },
       shared
     }])
   }

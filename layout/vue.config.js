@@ -39,6 +39,7 @@ module.exports = {
       filename: remoteEntryName,
       // 引入的 外部模块
       exposes: {
+        './Component': './src/components/HelloWorld.vue',
         './routes': './src/router/index.ts'
       },
       shared
